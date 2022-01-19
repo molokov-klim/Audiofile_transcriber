@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>help</class>
+ <widget class="QDialog" name="help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>858</width>
+    <height>718</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Справка</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/image/bird2.ico</normaloff>:/image/bird2.ico</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <column>
+      <property name="text">
+       <string>Элемент</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Пояснение</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Файл</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <item>
+       <property name="text">
+        <string>Открыть</string>
+       </property>
+       <property name="text">
+        <string>Открывает и транскрибирует файл</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+       <property name="text">
+        <string>Сохраняет текст в файл</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Выход</string>
+       </property>
+       <property name="text">
+        <string>Закрывает программу</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Конвертация</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>m4a to wav</string>
+       </property>
+       <property name="text">
+        <string>Конвертирует файлы формата m4a в формат wav</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>mp3 to wav</string>
+       </property>
+       <property name="text">
+        <string>Конвертирует файлы формата mp3 в формат wav</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>flv to wav</string>
+       </property>
+       <property name="text">
+        <string>Конвертирует файлы формата flv в формат wav</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ogg to wav</string>
+       </property>
+       <property name="text">
+        <string>Конвертирует файлы формата ogg в формат wav</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Язык</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Русский</string>
+       </property>
+       <property name="text">
+        <string>Устанавливает русский язык транскрибации</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Английский</string>
+       </property>
+       <property name="text">
+        <string>Устанавливает английский язык транскрибации</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Telegram</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Подключить ID</string>
+       </property>
+       <property name="text">
+        <string>Подключение ID Telegram чата для отправки сообщений после транскрибации</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Показать ID</string>
+       </property>
+       <property name="text">
+        <string>Отображает подключенный ID Telegram</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Отправить</string>
+       </property>
+       <property name="text">
+        <string>Отправляет текст из основного окна в Telegram</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Справка</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>О программе</string>
+       </property>
+       <property name="text">
+        <string>Отображает информацию о программе</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Справка</string>
+       </property>
+       <property name="text">
+        <string>Вызывает настоящую справку</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Интерфейс</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Поле вывода</string>
+       </property>
+       <property name="text">
+        <string>Поле для вывода транскрибированного текста</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Поле ввода</string>
+       </property>
+       <property name="text">
+        <string>Поле для ввода поискового запроса</string>
+       </property>
+      </item>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>help</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>434</x>
+     <y>685</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>577</x>
+     <y>658</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
